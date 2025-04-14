@@ -1,68 +1,35 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f5f5f5;
-    color: #333;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #F5F5DC; /* Light Beige */
 }
 
 header {
-    background-color: #8B4513; /* Brown */
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
-}
-
-.profile-container {
-    margin: 0 auto;
+    background: linear-gradient(to bottom, #8B4513, #D2B48C); /* Brown to Beige */
 }
 
 .profile-pic {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    border: 5px solid #D2B48C; /* Beige */
-}
-
-h1 {
-    margin: 10px 0;
-}
-
-h2 {
-    margin: 5px 0;
-    font-weight: normal;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 section {
-    margin: 20px;
-    padding: 20px;
-    background-color: #D2B48C; /* Beige */
-    border-radius: 8px;
+    border: 1px solid #A9A9A9; /* Warm Grey */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 h3 {
-    color: #8B0000; /* Maroon */
-}
-
-ul {
-    list-style-type: none;
-    padding: 0;
+    color: #800000; /* Dark Maroon */
+    font-family: 'Playfair Display', serif;
 }
 
 .contact {
-    background-color: #800000; /* Red Wine */
-    color: #fff;
+    background-color: #7B1F1F; /* Burgundy */
+    border-radius: 8px;
 }
 
 .social-links a {
-    color: #fff;
-    margin: 0 10px;
-    text-decoration: none;
+    transition: color 0.3s;
 }
 
-footer {
-    text-align: center;
-    padding: 10px 0;
-    background-color: #8B4513; /* Brown */
-    color: #fff;
+.social-links a:hover {
+    color: #FFD700; /* Gold */
 }
