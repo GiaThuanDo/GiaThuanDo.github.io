@@ -1,43 +1,43 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
-    margin: 0;
-    padding: 0;
+// Theme toggle functionality
+const themeToggle = document.getElementById('themeToggle');
+const body = document.body;
+
+themeToggle.addEventListener('click', () => {
+    body.classList.toggle('light-theme');
+});
+
+// Create floating dots
+const dotsContainer = document.getElementById('dots');
+const dotsCount = 50;
+
+for (let i = 0; i < dotsCount; i++) {
+    const dot = document.createElement('div');
+    dot.classList.add('dot');
+    
+    // Random positioning
+    dot.style.left = `${Math.random() * 100}%`;
+    dot.style.top = `${Math.random() * 100}%`;
+    
+    // Random animation delay
+    dot.style.animation = `float ${5 + Math.random() * 10}s ease-in-out infinite`;
+    dot.style.animationDelay = `${Math.random() * 5}s`;
+    
+    dotsContainer.appendChild(dot);
 }
 
-header {
-    background: #333;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
-}
+// Scroll animation
+const observerOptions = {
+    threshold: 0.25
+};
 
-nav ul {
-    list-style: none;
-    padding: 0;
-}
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+        }
+    });
+}, observerOptions);
 
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-}
-
-section {
-    padding: 20px;
-    margin: 20px;
-    background: #fff;
-    border-radius: 5px;
-}
-
-footer {
-    text-align: center;
-    padding: 10px 0;
-    background: #333;
-    color: #fff;
-}
+document.querySelectorAll('.animate-on-scroll').forEach(element => {
+    observer.observe(element);
+});
