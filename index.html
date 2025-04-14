@@ -3,423 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name | Portfolio</title>
-    <style>
-        :root {
-            --bg-color: #1c1e22;
-            --text-color: #f5f5f5;
-            --accent-color: #4CAF50;
-            --secondary-bg: #252a30;
-            --border-radius: 10px;
-        }
-        
-        body {
-            font-family: Arial, sans-serif;
-            background-color: var(--bg-color);
-            color: var(--text-color);
-            margin: 0;
-            padding: 0;
-            line-height: 1.6;
-        }
-        
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        
-        header {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 20px 0;
-        }
-        
-        .profile {
-            display: flex;
-            align-items: center;
-            gap: 20px;
-        }
-        
-        .profile-image {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            object-fit: cover;
-        }
-        
-        .profile-info h1 {
-            margin-bottom: 5px;
-            font-size: 2.5rem;
-        }
-        
-        .profile-info h2 {
-            margin-top: 0;
-            font-weight: normal;
-            opacity: 0.8;
-            font-size: 1.2rem;
-        }
-        
-        .social-icons {
-            display: flex;
-            gap: 10px;
-            margin-top: 15px;
-        }
-        
-        .social-icon {
-            width: 40px;
-            height: 40px;
-            background-color: #333;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: var(--text-color);
-            text-decoration: none;
-            transition: transform 0.3s;
-        }
-        
-        .social-icon:hover {
-            transform: translateY(-3px);
-        }
-        
-        .contact-btn {
-            background-color: var(--accent-color);
-            color: white;
-            border: none;
-            padding: 12px 24px;
-            border-radius: 5px;
-            cursor: pointer;
-            font-weight: bold;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            transition: background-color 0.3s;
-        }
-        
-        .contact-btn:hover {
-            background-color: #3e8e41;
-        }
-        
-        .theme-toggle {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            color: var(--text-color);
-        }
-        
-        .toggle-switch {
-            position: relative;
-            display: inline-block;
-            width: 60px;
-            height: 30px;
-        }
-        
-        .toggle-switch input {
-            opacity: 0;
-            width: 0;
-            height: 0;
-        }
-        
-        .slider {
-            position: absolute;
-            cursor: pointer;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background-color: #333;
-            transition: .4s;
-            border-radius: 34px;
-        }
-        
-        .slider:before {
-            position: absolute;
-            content: "";
-            height: 22px;
-            width: 22px;
-            left: 4px;
-            bottom: 4px;
-            background-color: white;
-            transition: .4s;
-            border-radius: 50%;
-        }
-        
-        input:checked + .slider {
-            background-color: var(--accent-color);
-        }
-        
-        input:focus + .slider {
-            box-shadow: 0 0 1px var(--accent-color);
-        }
-        
-        input:checked + .slider:before {
-            transform: translateX(30px);
-        }
-        
-        .card {
-            background-color: var(--secondary-bg);
-            border-radius: var(--border-radius);
-            padding: 25px;
-            margin-bottom: 30px;
-        }
-        
-        .section-title {
-            font-size: 1.8rem;
-            margin-top: 0;
-            margin-bottom: 20px;
-        }
-        
-        .experience-item {
-            margin-bottom: 20px;
-        }
-        
-        .experience-title {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 10px;
-        }
-        
-        .experience-title h3 {
-            margin: 0;
-            font-size: 1.3rem;
-        }
-        
-        .experience-date {
-            color: #999;
-            font-size: 0.9rem;
-        }
-        
-        .contact-info {
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-        }
-        
-        .contact-item {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-        
-        .contact-item a {
-            color: var(--accent-color);
-            text-decoration: none;
-        }
-        
-        .skills {
-            margin-top: 20px;
-        }
-        
-        .skill-item {
-            margin-bottom: 20px;
-        }
-        
-        .skill-header {
-            display: flex;
-            justify-content: space-between;
-            margin-bottom: 5px;
-        }
-        
-        .skill-bar {
-            width: 100%;
-            height: 12px;
-            background-color: #333;
-            border-radius: 6px;
-            overflow: hidden;
-        }
-        
-        .skill-level {
-            height: 100%;
-            background-color: var(--accent-color);
-        }
-        
-        .sidebar {
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-        }
-        
-        .main-content {
-            display: grid;
-            grid-template-columns: 7fr 3fr;
-            gap: 30px;
-        }
-        
-        @media (max-width: 768px) {
-            header {
-                flex-direction: column;
-                text-align: center;
-            }
-            
-            .profile {
-                flex-direction: column;
-            }
-            
-            .theme-toggle {
-                margin-top: 20px;
-            }
-            
-            .main-content {
-                grid-template-columns: 1fr;
-            }
-        }
-    </style>
+    <title>Your Name - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <header>
-            <div class="profile">
-                <img src="/api/placeholder/150/150" alt="Profile" class="profile-image">
-                <div class="profile-info">
-                    <h1>Your Name</h1>
-                    <h2>Your Title at Company/University</h2>
-                    <div class="social-icons">
-                        <a href="#" class="social-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
-                        </a>
-                        <a href="#" class="social-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>
-                        </a>
-                        <a href="#" class="social-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
-                        </a>
-                        <a href="#" class="social-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="action-area">
-                <div class="theme-toggle">
-                    <span>Dark Mode</span>
-                    <label class="toggle-switch">
-                        <input type="checkbox" checked>
-                        <span class="slider"></span>
-                    </label>
-                </div>
-                <button class="contact-btn">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
-                    CONTACT ME
-                </button>
-            </div>
-        </header>
-        
-        <div class="main-content">
-            <div class="main-section">
-                <div class="card">
-                    <h3 class="section-title">About Me</h3>
-                    <p>Hello! I'm a [your position] at [your institution/company]. I'm particularly interested in [your interests/specializations]. My current project/thesis, titled "[Project Title]," falls under the field of [field]. It explores [brief description of your work and its impact].</p>
-                </div>
-                
-                <div class="card">
-                    <h3 class="section-title">Experience</h3>
-                    <div class="experience-item">
-                        <div class="experience-title">
-                            <h3>Position Title - Company/Institution</h3>
-                            <span class="experience-date">(Year - Year)</span>
-                        </div>
-                        <p>Description of your responsibilities and achievements. Highlight key accomplishments and the impact of your work.</p>
-                    </div>
-                    
-                    <div class="experience-item">
-                        <div class="experience-title">
-                            <h3>Previous Position - Previous Company</h3>
-                            <span class="experience-date">(Year - Year)</span>
-                        </div>
-                        <p>Description of your responsibilities and achievements in this role. Focus on quantifiable results and the skills you developed.</p>
-                    </div>
-                </div>
-                
-                <div class="card">
-                    <h3 class="section-title">Education</h3>
-                    <div class="experience-item">
-                        <div class="experience-title">
-                            <h3>Degree in Field - University Name</h3>
-                            <span class="experience-date">(Year - Year)</span>
-                        </div>
-                        <p>Brief description of your studies, noteworthy projects, awards, or relevant coursework.</p>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="sidebar">
-                <div class="card contact-info">
-                    <div class="contact-item">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-                        <span>Your Location</span>
-                    </div>
-                    <div class="contact-item">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
-                        <a href="mailto:your.email@example.com">your.email@example.com</a>
-                    </div>
-                    <div class="contact-item">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg>
-                        <a href="https://yourwebsite.com">https://yourwebsite.com</a>
-                    </div>
-                </div>
-                
-                <div class="card skills">
-                    <h3 class="section-title">Skills</h3>
-                    
-                    <div class="skill-item">
-                        <div class="skill-header">
-                            <span>Skill Name 1</span>
-                            <span>Advanced</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-level" style="width: 85%;"></div>
-                        </div>
-                    </div>
-                    
-                    <div class="skill-item">
-                        <div class="skill-header">
-                            <span>Skill Name 2</span>
-                            <span>Intermediate</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-level" style="width: 65%;"></div>
-                        </div>
-                    </div>
-                    
-                    <div class="skill-item">
-                        <div class="skill-header">
-                            <span>Skill Name 3</span>
-                            <span>Expert</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-level" style="width: 95%;"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <header>
+        <div class="profile-container">
+            <img src="images/profile.jpg" alt="Your Name" class="profile-pic">
+            <h1>Your Name</h1>
+            <h2>Web Developer | Designer | Your Profession</h2>
         </div>
-    </div>
+    </header>
     
-    <script>
-        // Theme toggle functionality
-        const themeToggle = document.querySelector('input[type="checkbox"]');
-        const root = document.documentElement;
-        
-        themeToggle.addEventListener('change', function() {
-            if (this.checked) {
-                // Dark mode
-                root.style.setProperty('--bg-color', '#1c1e22');
-                root.style.setProperty('--text-color', '#f5f5f5');
-                root.style.setProperty('--secondary-bg', '#252a30');
-            } else {
-                // Light mode
-                root.style.setProperty('--bg-color', '#f5f5f5');
-                root.style.setProperty('--text-color', '#333');
-                root.style.setProperty('--secondary-bg', '#ffffff');
-            }
-        });
-        
-        // Contact button functionality
-        document.querySelector('.contact-btn').addEventListener('click', function() {
-            window.location.href = 'mailto:your.email@example.com';
-        });
-    </script>
+    <section class="about">
+        <h3>About Me</h3>
+        <p>Write a brief introduction about yourself here. Highlight your skills, interests, and what you are passionate about.</p>
+    </section>
+
+    <section class="experience">
+        <h3>Experience</h3>
+        <ul>
+            <li>Job Title at Company Name (Year - Year)</li>
+            <li>Job Title at Company Name (Year - Year)</li>
+            <li>Job Title at Company Name (Year - Year)</li>
+        </ul>
+    </section>
+
+    <section class="education">
+        <h3>Education</h3>
+        <ul>
+            <li>Degree in Field of Study, University Name (Year)</li>
+            <li>Degree in Field of Study, University Name (Year)</li>
+        </ul>
+    </section>
+
+    <section class="contact">
+        <h3>Contact Details</h3>
+        <p>Email: your.email@example.com</p>
+        <p>Phone: (123) 456-7890</p>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
+            <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Your Name. All rights reserved.</p>
+    </footer>
 </body>
 </html>
