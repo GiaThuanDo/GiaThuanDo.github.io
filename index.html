@@ -291,18 +291,7 @@
                     </div>
                 </div>
             </div>
-            <div class="action-area">
-                <div class="theme-toggle">
-                    <span>Dark Mode</span>
-                    <label class="toggle-switch">
-                        <input type="checkbox" checked>
-                        <span class="slider"></span>
-                    </label>
-                </div>
-                </button>
-            </div>
-        </header>
-        
+                
         <div class="main-content">
             <div class="main-section">
                 <div class="card">
@@ -395,24 +384,7 @@
     </div>
     
     <script>
-        // Theme toggle functionality
-        const themeToggle = document.querySelector('input[type="checkbox"]');
-        const root = document.documentElement;
-        
-        themeToggle.addEventListener('change', function() {
-            if (this.checked) {
-                // Dark mode
-                root.style.setProperty('--bg-color', '#1c1e22');
-                root.style.setProperty('--text-color', '#f5f5f5');
-                root.style.setProperty('--secondary-bg', '#252a30');
-            } else {
-                // Light mode
-                root.style.setProperty('--bg-color', '#f5f5f5');
-                root.style.setProperty('--text-color', '#333');
-                root.style.setProperty('--secondary-bg', '#ffffff');
-            }
-        });
-        
+       
         // Contact button functionality
         document.querySelector('.contact-btn').addEventListener('click', function() {
             window.location.href = 'mailto:your.email@example.com';
