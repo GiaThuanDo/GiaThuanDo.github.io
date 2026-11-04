@@ -32,29 +32,31 @@ const SITE = {
       link: null,
       responsibilities: [
          "Served as Salesforce's Project Manager. Responsible for new function deployment, user testing, training, support, data QC/ QA, and CRM-CDP-ERP integration, implementation, resolve requests/ issues/ backlogs.",
+         "Assist Commercial team in data cleaning, aggregation, and analysis. Participate in strategic decisions within the Executive Committee and in streamlining cross-functional departments operational practices.",
          "Systems deployed: ERP, CDP, DMP, CRM, QMS, TPRM, BI."
       ],
       achievements: [
-        "Automated commercial workflows by deploying Salesforce CRM, cutting cross-functional processing times by 50% while increasing data accuracy.",
+        "Streamline commercial workflows by deploying Salesforce CRM, designed Excel templates in contract creation, order management process, cutting cross-functional processing times by 50% while increasing data accuracy.",
          "Modeled SBU sales data and restructured distribution networks during a corporate reorganization, identifying expansion opportunities for a projected 20% revenue lift and cutting logistics cycle times by 30%."
       ] },
     { date: "Mar 2017 – Feb 2025 · Ho Chi Minh City, Vietnam",
       title: "Business Owner / Strategic Advisor, DGT Collectibles Studio",
       link: null,
       responsibilities: [
-        "Formulated algorithmic supply-demand trend models to optimize alternative asset evaluations and manage daily inventory operations."
+        "Oversaw daily service operations including appraisal, investment consulting, product procurement, distribution, antique preservation, restoration, and market intelligence services. Primarily focused on researching collectibles with high turnover rate and high-profit potential.",
       ],
       achievements: [
-        "Drove a 20% annual increase in client collectible portfolio ROI since 2019 and achieved a 90% quarterly inventory turnover rate."
+        "Drove a 20% annual increase in client collectible portfolio ROI since 2019 by formulating algorithmic supply-demand trend models that optimized alternative asset evaluations and achieved a 90% quarterly inventory turnover rate."
       ] },
     { date: "Aug 2019 – Dec 2022 · Remote, United States",
       title: "Ecommerce Manager, Gozzman",
       link: null,
       responsibilities: [
-        "Launched 2 digital storefronts and engineered targeted product designs to optimize the e-commerce customer experience."
+        "Supervised daily operations of 6 stores and coordinated with designers, manufacturers, and shipping agencies on product design, fulfillment, and delivery."
       ],
       achievements: [
-        "Generated over $100,000 USD in total revenue, driving a 10% sustained lift in monthly sales while maintaining a 98% customer satisfaction benchmark."
+        "Generated designs that contributed to over $100,000 USD in sales and achieved 98% positive feedback across US ecommerce platforms, demonstrating effective research and customer engagement strategies.",
+         "Launched and managed 2 new stores with different product lines in Q1.2021, contributing to a ~10% increase in monthly revenue since Q3 and Q4.2021."
       ] }
   ],
   skills: [
