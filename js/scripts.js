@@ -13,7 +13,7 @@
 const SITE = {
 
   /* NOTE A: text under your name */
-  intro: "MSc International Finance candidate · NEOMA Business School · National Taipei University",
+  intro: "MSc International Finance,<br>Corporate Finance & Investment Banking",
 
   /* NOTE B: EDUCATION — one entry per school. Text after \n shows as a small grey line. */
   education: [
