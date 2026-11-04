@@ -55,7 +55,7 @@ const SITE = {
       title: "Ecommerce Operation Manager, Gozzman",
       link: null,
       responsibilities: [
-        "Managed daily operations across 6 e-commerce stores, coordinating with designers, manufacturers, and shipping partners to oversee product design, order fulfillment, and delivery across major US marketplaces, including eBay, Amazon, Etsy, Walmart, HomeDepot,...."
+        "Managed daily operations across 6 e-commerce stores, coordinating with designers, manufacturers, and shipping partners to oversee product design, order fulfillment, and delivery across major US marketplaces, including eBay, Amazon, Etsy, Walmart, HomeDepot,....",
          "Product range: Print-on-demand garments, posters, mugs, electronics, sport equipments, jewellery,...."
       ],
       achievements: [
