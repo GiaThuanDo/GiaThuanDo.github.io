@@ -19,7 +19,7 @@ const SITE = {
   education: [
     "**NEOMA Business School** | MSc in International Finance, Corporate Finance & Investment Banking | Sep 2026 – May 2027\nReims, France · Selected as the sole annual admit to the global Dual Degree program (1 candidate per year)",
     "**National Taipei University** | GMBA in Finance, Financial Engineering | Mar 2025 – May 2027\nTaipei, Taiwan · GPA 4.2 / 4.3 · Partial Scholarship, ANNEX Scholarship, Research Assistant Scholarship",
-    "**Ton Duc Thang University** | Bachelor in English Linguistics, Translation and Interpretation | Graduated 2022\nHo Chi Minh City, Vietnam · GPA 3.5 / 4.0 · Class Valedictorian, 4 Academic Excellence scholarships, Dean's List"
+    "**Ton Duc Thang University** | Bachelor in English Linguistics, Translation and Interpretation | 2022\nHo Chi Minh City, Vietnam · GPA 3.5 / 4.0 · Class Valedictorian, 4 Academic Excellence scholarships, Dean's List"
   ],
 
   /* NOTE C: EXPERIENCE (timeline, newest first)
