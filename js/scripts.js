@@ -13,7 +13,7 @@
 const SITE = {
 
   /* NOTE A: text under your name */
-  intro: "MSc International Finance,<br>Corporate Finance & Investment Banking",
+  intro: "MSc International Finance, Corporate Finance & Investment Banking",
 
   /* NOTE B: EDUCATION — one entry per school. Text after \n shows as a small grey line. */
   education: [
@@ -30,7 +30,7 @@ const SITE = {
       title: "AI Research Assistant (Part-Time), IFIT Lab (Intelligent Financial Innovation Technology Lab)",
       link: null,
       bullets: [
-        "Conducted comparative benchmarking research of AI models across multilingual STT/TTS, translation, conversational AI and RAG, identifying model strengths, performance limitations and potential applications in workflow automation and Agentic AI."
+        "Build RAG models, conducted comparative benchmarking research of AI models across multilingual STT/TTS, translation, conversational AI and RAG, identifying model strengths, performance limitations and potential applications in workflow automation and Agentic AI."
       ] },
     { date: "Mar 2022 – Mar 2025 · Ho Chi Minh City, Vietnam",
       title: "Business Analyst, Commercial & Supply Chain Operations, Dentsply Sirona",
