@@ -116,13 +116,20 @@ document.addEventListener("DOMContentLoaded", () => {
     return `<div>${rich(main)}${sub ? `<span class="edu-sub">${rich(sub)}</span>` : ""}</div>`;
   }).join("")}</div>`;
 
-  const buildExp = a => `<div class="timeline">${a.map(e => {
+ const buildExp = a => `<div class="timeline">${a.map(e => {
     const extra = e.link ? ` ${link(e.link.text, e.link.url)}` : "";
+    
     const resps = (e.responsibilities || []).map(b => `<li>${typeof b === "string" ? rich(b) : link(b.text, b.url)}</li>`).join("");
     const achs = (e.achievements || []).map(b => `<li>${typeof b === "string" ? rich(b) : link(b.text, b.url)}</li>`).join("");
+    
     let html = `<div class="timeline-item"><h5><span class="text-muted">${esc(e.date)}</span>${rich(e.title)}${extra}</h5>`;
-    if (resps) html += `<ul>${resps}</ul>`;
-    if (achs) html += `<br><strong>Key Achievements:</strong><ul>${achs}</ul>`;
+    
+    // Sub-header styling: slightly smaller text, bold, with margin for breathing room
+    const subHeaderStyle = 'style="font-size: 0.9em; font-weight: 700; margin-top: 12px; margin-bottom: 4px; opacity: 0.9;"';
+    
+    if (resps) html += `<div ${subHeaderStyle}>Responsibilities:</div><ul>${resps}</ul>`;
+    if (achs) html += `<div ${subHeaderStyle}>Key Achievements:</div><ul>${achs}</ul>`;
+    
     html += `</div>`;
     return html;
   }).join("")}</div>`;
