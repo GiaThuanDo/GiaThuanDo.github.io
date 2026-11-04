@@ -52,10 +52,11 @@ const SITE = {
         "Drove a 20% annual increase in client collectible portfolio ROI since 2019 by formulating algorithmic supply-demand trend models that optimized alternative asset evaluations and achieved a 90% quarterly inventory turnover rate."
       ] },
     { date: "Aug 2019 – Dec 2022 · Remote, United States",
-      title: "Ecommerce Manager, Gozzman",
+      title: "Ecommerce Operation Manager, Gozzman",
       link: null,
       responsibilities: [
-        "Supervised daily operations of 6 stores and coordinated with designers, manufacturers, and shipping agencies on product design, fulfillment, and delivery."
+        "Managed daily operations across 6 e-commerce stores, coordinating with designers, manufacturers, and shipping partners to oversee product design, order fulfillment, and delivery across major US marketplaces, including eBay, Amazon, Etsy, Walmart, HomeDepot,...."
+         "Product range: Print-on-demand garments, posters, mugs, electronics, sport equipments, jewellery,...."
       ],
       achievements: [
         "Generated designs that contributed to over $100,000 USD in sales and achieved 98% positive feedback across US ecommerce platforms, demonstrating effective research and customer engagement strategies.",
