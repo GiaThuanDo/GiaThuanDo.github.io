@@ -32,12 +32,15 @@ const SITE = {
       link: null,
       responsibilities: [
          "Served as Salesforce's Project Manager. Responsible for new function deployment, user testing, training, support, data QC/ QA, and CRM-CDP-ERP integration, implementation, resolve requests/ issues/ backlogs.",
-         "Assist Commercial team in data cleaning, aggregation, and analysis. Participate in strategic decisions within the Executive Committee and in streamlining cross-functional departments operational practices.",
+         "Enhanced CRM adoption, created user guidelines, analyzed sales trends and customer segmentation",
+         "Managed end-to-end data workflows, from extraction and cleaning to aggregation, modeling, analysis, and dashboard visualization",
+         "Participated in strategic decisions within the Executive Committee and in streamlining cross-functional departments operational practices.",
          "Systems deployed: ERP, CDP, DMP, CRM, QMS, TPRM, BI."
       ],
       achievements: [
-        "Streamline commercial workflows by deploying Salesforce CRM, designed Excel templates in contract creation, order management process, cutting cross-functional processing times by 50% while increasing data accuracy.",
-         "Modeled SBU sales data and restructured distribution networks during a corporate reorganization, identifying expansion opportunities for a projected 20% revenue lift and cutting logistics cycle times by 30%."
+        "Streamlined commercial workflows by deploying Salesforce CRM, designed Excel templates in contract creation, order management process, cutting cross-functional processing times by 50% while increasing data accuracy.",
+         "Modeled SBU sales data and restructured distribution networks during a corporate reorganization, identifying expansion opportunities for a projected 20% revenue lift and cutting logistics cycle times by 30%.",
+         "Achieved an addition of 10-20% increase in event attendance by conducting product profiling analysis to support the marketing team in identifying products with suitable prospects for future workshops and events."
       ] },
     { date: "Mar 2017 – Feb 2025 · Ho Chi Minh City, Vietnam",
       title: "Business Owner / Strategic Advisor, DGT Collectibles Studio",
@@ -62,7 +65,7 @@ const SITE = {
   skills: [
     "**Technical:** SQL, VBA, SAP/AX, Salesforce CRM, Visio, Tableau, Power BI, DAX, Power Automate, Python",
     "**Languages:** Vietnamese (Native), English (C1), French (B1), Chinese (B1), Japanese (A2)",
-    "**Interests:** 3D design, collecting antiques, learning languages"
+    "**Hobby & Interests:** 3D design, collecting antiques, learning languages"
   ],
   certifications: [
     { name: "Salesforce Ranger Badge", url: "" },
