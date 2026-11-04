@@ -30,7 +30,7 @@ const SITE = {
       title: "AI Research Assistant (Part-Time), IFIT Lab (Intelligent Financial Innovation Technology Lab)",
       link: null,
       bullets: [
-         "Build RAG models, conducted comparative benchmarking research of AI models across multilingual STT/TTS, translation, conversational AI and RAG, identifying model strengths, performance limitations and potential applications in workflow automation and Agentic AI.",
+         "Built RAG, AI Chatbots, conducted comparative benchmarking research of AI models across multilingual STT/TTS, translation, conversational AI and RAG, identifying model strengths, performance limitations and potential applications in workflow automation and Agentic AI.",
          "Inclusive AI Dialogue Assistive Device Project, sub-project 3: Multimodal Cross-lingual Task-Oriented Dialogue System for Inclusive Communication Support (NSTC)"
       ] },
     { date: "Mar 2022 – Mar 2025 · Ho Chi Minh City, Vietnam",
