@@ -11,23 +11,15 @@
    - A section with no entries ( [] ) hides itself and its menu link.
 ===================================================================== */
 const SITE = {
-
-  /* NOTE A: text under your name */
   intro: "MSc International Finance,<br>Corporate Finance & Investment Banking",
-
-  /* NOTE B: EDUCATION — one entry per school. Text after \n shows as a small grey line. */
   education: [
     "**NEOMA Business School** | MSc in International Finance, Corporate Finance & Investment Banking | Sep 2026 – May 2027\nReims, France · Selected as the sole annual admit to the global Dual Degree program (1 candidate per year)",
     "**National Taipei University** | GMBA in Finance, Financial Engineering | Mar 2025 – May 2027\nTaipei, Taiwan · GPA 4.2 / 4.3 · Partial Scholarship, ANNEX Scholarship, Research Assistant Scholarship",
     "**Ton Duc Thang University** | Bachelor in English Linguistics, Translation and Interpretation | 2022\nHo Chi Minh City, Vietnam · GPA 3.5 / 4.0 · Class Valedictorian, 4 Academic Excellence scholarships, Dean's List"
   ],
-
-  /* NOTE C: EXPERIENCE (timeline, newest first)
-     date = small grey line; title = role + organization; link = optional {text, url} or null
-     responsibilities & achievements = arrays of bullet points */
   experience: [
     { date: "Apr 2025 – Present · Taipei, Taiwan",
-      title: "AI Research Assistant (Part-Time), IFIT Lab (Intelligent Financial Innovation Technology Lab)",
+      title: "AI Research Assistant (Part-Time), IFIT Lab",
       link: null,
       responsibilities: [
          "Built RAG, AI Chatbots, conducted comparative benchmarking research of AI models across multilingual STT/TTS, translation, conversational AI and RAG, identifying model strengths, performance limitations and potential applications in workflow automation and Agentic AI."
@@ -65,87 +57,41 @@ const SITE = {
         "Generated over $100,000 USD in total revenue, driving a 10% sustained lift in monthly sales while maintaining a 98% customer satisfaction benchmark."
       ] }
   ],
-
-  /* NOTE D: SKILLS — one line each. **bold** works. */
   skills: [
     "**Technical:** SQL, VBA, SAP/AX, Salesforce CRM, Visio, Tableau, Power BI, DAX, Power Automate, Python",
     "**Languages:** Vietnamese (Native), English (C1), French (B1), Chinese (B1), Japanese (A2)",
     "**Interests:** 3D design, collecting antiques, learning languages"
   ],
-
-  /* NOTE E: CERTIFICATIONS — name + link ("" = no link) */
   certifications: [
     { name: "Salesforce Ranger Badge", url: "" },
     { name: "Certified Translator Certificate", url: "" },
     { name: "More certifications (Google Drive)", url: "https://drive.google.com/drive/folders/1Xw6RfNgJpnIHjmEiR2bQ6iLv28meuZkd?usp=sharing" }
   ],
-
-  /* NOTE F: AWARDS — one line each. **bold** works. */
   awards: [
     "**Sole annual admit**, NEOMA Business School global Dual Degree program (1 candidate per year)",
     "**Class Valedictorian**, Ton Duc Thang University (2022); 4 scholarships for Academic Excellence; Dean's List; Honors Student",
     "**Partial Scholarship, ANNEX Scholarship and Research Assistant Scholarship**, National Taipei University"
   ],
-
-  /* NOTE G: PUBLICATIONS — one line per paper, citation style. **bold** works.
-     The line below is a PLACEHOLDER. Replace it with your own paper, or change this
-     whole list to  publications: [],  to hide the section and its menu link. */
   publications: [
     "**Your Name**, Co-author Name (Year), \"Paper Title\", Conference or Journal Name, City, Country, Month Day, Year. [Replace or delete this line]"
   ],
-
-  /* NOTE H: PORTFOLIO — cards grouped under headings (like the original site).
-     event = line above the title (competition / employer / course)
-     title = bold project name          note  = small italic line ("" hides it)
-     award = gold badge ("" hides it)   links = buttons; each { label: "Report", url: "https://..." }
-     Cards with  links: []  show no buttons. Titles in [brackets] are PLACEHOLDERS: replace them.
-     Example buttons to paste inside links: [ { label: "Video", url: "https://youtu.be/xxxx" },
-                                              { label: "Report", url: "https://drive.google.com/..." } ]
-     Use only public links (YouTube, Google Drive, PDF) and not your GitHub. */
   portfolio: [
     { heading: "Competitions",
       items: [
-        { event: "VSU × NTPU Collaborative Hackathon on AI Application",
-          title: "[Project name]",
-          note: "Role: UI/UX Designer",
-          award: "1st Place",
-          links: [] },
-        { event: "Future Bankers @ Cathay Talent Lab Competition",
-          title: "[Project name]",
-          note: "Role: Team Lead",
-          award: "1st Place",
-          links: [] },
-        { event: "Ministry of Digital Affairs, Digital Talent Enhancement on AI Marketing",
-          title: "[Project name]",
-          note: "Role: Team Lead",
-          award: "Finalist",
-          links: [] }
+        { event: "VSU × NTPU Collaborative Hackathon", title: "[Project name]", note: "Role: UI/UX Designer", award: "1st Place", links: [] },
+        { event: "Future Bankers @ Cathay Talent Lab", title: "[Project name]", note: "Role: Team Lead", award: "1st Place", links: [] },
+        { event: "Ministry of Digital Affairs, AI Marketing", title: "[Project name]", note: "Role: Team Lead", award: "Finalist", links: [] }
       ] },
     { heading: "Work & Research Projects",
       items: [
-        { event: "IFIT Lab · 2025 – Present",
-          title: "Multilingual AI Model Benchmarking",
-          note: "STT/TTS, translation, conversational AI and RAG",
-          award: "",
-          links: [] },
-        { event: "Dentsply Sirona · 2022 – 2025",
-          title: "Salesforce CRM Workflow Automation",
-          note: "Cut cross-functional processing time by 50%",
-          award: "",
-          links: [] }
+        { event: "IFIT Lab · 2025 – Present", title: "Multilingual AI Model Benchmarking", note: "STT/TTS, translation, conversational AI and RAG", award: "", links: [] },
+        { event: "Dentsply Sirona · 2022 – 2025", title: "Salesforce CRM Workflow Automation", note: "Cut cross-functional processing time by 50%", award: "", links: [] }
       ] },
     { heading: "Course Projects",
       items: [
-        { event: "2025 Software Engineering Course Project",
-          title: "InquAIry",
-          note: "",
-          award: "",
-          links: [ { label: "Project Site",  url: "https://inquairy.github.io/" },
-                   { label: "Course Report", url: "https://drive.google.com/file/d/1bs-NMOpDBO3KZ7iBUrAFOAE6JCavFvb5/view?usp=drive_link" } ] }
+        { event: "2025 Software Engineering", title: "InquAIry", note: "", award: "", links: [ { label: "Project Site", url: "https://inquairy.github.io/" }, { label: "Course Report", url: "https://drive.google.com/file/d/1bs-NMOpDBO3KZ7iBUrAFOAE6JCavFvb5/view?usp=drive_link" } ] }
       ] }
   ],
-
-  /* NOTE I: ACTIVITIES & COMPETITIONS — one line each */
   clubs: [
     "**1st Place** — VSU × NTPU Collaborative Hackathon on AI Application (UI/UX Designer)",
     "**1st Place** — Future Bankers @ Cathay Talent Lab Competition (Team Lead)",
@@ -154,8 +100,6 @@ const SITE = {
     "**Outstanding Individual Award** — National English Olympiad (Team Lead)",
     "**Champion** — Troy University English Contest"
   ],
-
-  /* NOTE J: section titles + menu names */
   titles:    { edu: "Education", exp: "Experience", skills: "Skills", cert: "Certifications", award: "Awards", pub: "Publications", port: "Portfolio", act: "Activities" },
   navLabels: { edu: "Education", exp: "Experience", skills: "Skills", cert: "Certifications", award: "Awards", pub: "Publications", port: "Portfolio", act: "Activities" }
 };
@@ -174,15 +118,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const buildExp = a => `<div class="timeline">${a.map(e => {
     const extra = e.link ? ` ${link(e.link.text, e.link.url)}` : "";
-    
     const resps = (e.responsibilities || []).map(b => `<li>${typeof b === "string" ? rich(b) : link(b.text, b.url)}</li>`).join("");
     const achs = (e.achievements || []).map(b => `<li>${typeof b === "string" ? rich(b) : link(b.text, b.url)}</li>`).join("");
-    
     let html = `<div class="timeline-item"><h5><span class="text-muted">${esc(e.date)}</span>${rich(e.title)}${extra}</h5>`;
-    
     if (resps) html += `<ul>${resps}</ul>`;
     if (achs) html += `<br><strong>Key Achievements:</strong><ul>${achs}</ul>`;
-    
     html += `</div>`;
     return html;
   }).join("")}</div>`;
@@ -215,41 +155,49 @@ document.addEventListener("DOMContentLoaded", () => {
     [SITE.clubs,          buildList, "act-content",       "activities",     "act-title",       "nav-act",    "act"]
   ];
 
-  $("intro").innerHTML = SITE.intro;
+  if ($("intro")) $("intro").innerHTML = SITE.intro;
+  
   S.forEach(([data, build, box, sec, title, nav, key]) => {
     const has = Array.isArray(data) && data.length > 0;
-    $(box).innerHTML = has ? build(data) : "";
-    $(title).textContent = SITE.titles[key];
-    $(nav).textContent = SITE.navLabels[key];
-    $(sec).classList.toggle("hidden", !has);
-    $(nav).style.display = has ? "" : "none";
+    if ($(box)) $(box).innerHTML = has ? build(data) : "";
+    if ($(title)) $(title).textContent = SITE.titles[key];
+    if ($(nav)) {
+      $(nav).textContent = SITE.navLabels[key];
+      $(nav).style.display = has ? "" : "none";
+    }
+    if ($(sec)) $(sec).classList.toggle("hidden", !has);
   });
 
-  /* if profile.jpg is missing, show initials instead of a broken image */
   const img = $("profileImg");
-  img.addEventListener("error", () => {
-    img.src = "data:image/svg+xml;utf8," + encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130 130"><rect width="130" height="130" fill="#1b3763"/><text x="65" y="80" font-size="44" font-family="Georgia,serif" font-weight="700" text-anchor="middle" fill="#c9a15a">GD</text></svg>');
-  }, { once: true });
+  if (img) {
+    img.addEventListener("error", () => {
+      img.src = "data:image/svg+xml;utf8," + encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130 130"><rect width="130" height="130" fill="#1b3763"/><text x="65" y="80" font-size="44" font-family="Georgia,serif" font-weight="700" text-anchor="middle" fill="#c9a15a">GD</text></svg>');
+    }, { once: true });
+  }
 
-  /* mobile menu */
   const menuToggle = $("menuToggle"), sidebar = $("sidebar"), scrim = $("scrim");
-  const closeMenu = () => { sidebar.classList.remove("open"); scrim.classList.remove("show"); menuToggle.setAttribute("aria-expanded", "false"); };
-  menuToggle.addEventListener("click", () => {
-    const open = sidebar.classList.toggle("open");
-    scrim.classList.toggle("show", open);
-    menuToggle.setAttribute("aria-expanded", String(open));
-  });
-  scrim.addEventListener("click", closeMenu);
-  sidebar.querySelectorAll(".nav-link").forEach(l => l.addEventListener("click", closeMenu));
+  if (menuToggle && sidebar && scrim) {
+    const closeMenu = () => { sidebar.classList.remove("open"); scrim.classList.remove("show"); menuToggle.setAttribute("aria-expanded", "false"); };
+    menuToggle.addEventListener("click", () => {
+      const open = sidebar.classList.toggle("open");
+      scrim.classList.toggle("show", open);
+      menuToggle.setAttribute("aria-expanded", String(open));
+    });
+    scrim.addEventListener("click", closeMenu);
+    sidebar.querySelectorAll(".nav-link").forEach(l => l.addEventListener("click", closeMenu));
+  }
 
-  /* highlight the menu item of the section being read */
-  const navLinks = Array.from(sidebar.querySelectorAll(".nav-link")).filter(l => l.style.display !== "none");
-  const sections = navLinks.map(l => document.querySelector(l.getAttribute("href"))).filter(Boolean);
-  const setActiveLink = () => {
-    let current = sections[0];
-    for (const s of sections) if (s.getBoundingClientRect().top - 100 <= 0) current = s;
-    navLinks.forEach(l => l.classList.toggle("active", !!current && l.getAttribute("href") === `#${current.id}`));
-  };
-  window.addEventListener("scroll", setActiveLink, { passive: true });
-  setActiveLink();
+  if (sidebar) {
+    const navLinks = Array.from(sidebar.querySelectorAll(".nav-link")).filter(l => l.style.display !== "none");
+    const sections = navLinks.map(l => document.querySelector(l.getAttribute("href"))).filter(Boolean);
+    if (sections.length > 0) {
+      const setActiveLink = () => {
+        let current = sections[0];
+        for (const s of sections) if (s.getBoundingClientRect().top - 100 <= 0) current = s;
+        navLinks.forEach(l => l.classList.toggle("active", !!current && l.getAttribute("href") === `#${current.id}`));
+      };
+      window.addEventListener("scroll", setActiveLink, { passive: true });
+      setActiveLink();
+    }
+  }
 });
