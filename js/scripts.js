@@ -56,7 +56,7 @@ const SITE = {
       link: null,
       responsibilities: [
         "Managed daily operations across 6 e-commerce stores, coordinating with designers, manufacturers, and shipping partners to oversee product design, order fulfillment, and delivery across major US marketplaces, including eBay, Amazon, Etsy, Walmart, HomeDepot,....",
-         "Product range: Print-on-demand garments, posters, mugs, electronics, sport equipments, jewellery,...."
+        "Product range: Print-on-demand garments, posters, mugs, electronics, sport equipments, jewellery,...."
       ],
       achievements: [
         "Generated designs that contributed to over $100,000 USD in sales and achieved 98% positive feedback across US ecommerce platforms, demonstrating effective research and customer engagement strategies.",
