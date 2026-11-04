@@ -13,7 +13,7 @@
 const SITE = {
 
   /* NOTE A: text under your name */
-  intro: "MSc International Finance, Corporate Finance & Investment Banking",
+  intro: "MSc International Finance,<br>Corporate Finance & Investment Banking",
 
   /* NOTE B: EDUCATION — one entry per school. Text after \n shows as a small grey line. */
   education: [
@@ -24,36 +24,45 @@ const SITE = {
 
   /* NOTE C: EXPERIENCE (timeline, newest first)
      date = small grey line; title = role + organization; link = optional {text, url} or null
-     bullets = lines; a bullet can be "text" or { text:"text", url:"https://..." } */
+     responsibilities & achievements = arrays of bullet points */
   experience: [
     { date: "Apr 2025 – Present · Taipei, Taiwan",
       title: "AI Research Assistant (Part-Time), IFIT Lab (Intelligent Financial Innovation Technology Lab)",
       link: null,
-      bullets: [
-         "Built RAG, AI Chatbots, conducted comparative benchmarking research of AI models across multilingual STT/TTS, translation, conversational AI and RAG, identifying model strengths, performance limitations and potential applications in workflow automation and Agentic AI.",
+      responsibilities: [
+         "Built RAG, AI Chatbots, conducted comparative benchmarking research of AI models across multilingual STT/TTS, translation, conversational AI and RAG, identifying model strengths, performance limitations and potential applications in workflow automation and Agentic AI."
+      ],
+      achievements: [
          "Inclusive AI Dialogue Assistive Device Project, sub-project 3: Multimodal Cross-lingual Task-Oriented Dialogue System for Inclusive Communication Support (NSTC)"
       ] },
     { date: "Mar 2022 – Mar 2025 · Ho Chi Minh City, Vietnam",
       title: "Business Analyst, Commercial & Supply Chain Operations, Dentsply Sirona",
       link: null,
-      bullets: [
-         "Served as Salesforce's Project Manager. Responsible for new function deployment, user testing, training, support, data QC/ QA, and CRM-CDP-ERP integration, implementation, resolve requests/ issues/ backlogs.
+      responsibilities: [
+         "Served as Salesforce's Project Manager. Responsible for new function deployment, user testing, training, support, data QC/ QA, and CRM-CDP-ERP integration, implementation, resolve requests/ issues/ backlogs.",
+         "Systems deployed: ERP, CDP, DMP, CRM, QMS, TPRM, BI."
+      ],
+      achievements: [
          "Automated commercial workflows by deploying Salesforce CRM, cutting cross-functional processing times by 50% while increasing data accuracy.",
          "Modeled SBU sales data and restructured distribution networks during a corporate reorganization, identifying expansion opportunities for a projected 20% revenue lift and cutting logistics cycle times by 30%."
-         "Systems deployed: ERP, CDP, DMP, CRM, QMS, TPRM, BI"
-
       ] },
     { date: "Mar 2017 – Feb 2025 · Ho Chi Minh City, Vietnam",
       title: "Business Owner / Strategic Advisor, DGT Collectibles Studio",
       link: null,
-      bullets: [
-        "Drove a 20% annual increase in client collectible portfolio ROI since 2019 by formulating algorithmic supply-demand trend models that optimized alternative asset evaluations and achieved a 90% quarterly inventory turnover rate."
+      responsibilities: [
+        "Formulated algorithmic supply-demand trend models to optimize alternative asset evaluations and manage daily inventory operations."
+      ],
+      achievements: [
+        "Drove a 20% annual increase in client collectible portfolio ROI since 2019 and achieved a 90% quarterly inventory turnover rate."
       ] },
     { date: "Aug 2019 – Dec 2022 · Remote, United States",
       title: "Ecommerce Manager, Gozzman",
       link: null,
-      bullets: [
-        "Generated over $100,000 USD in total revenue by launching 2 digital storefronts and engineering targeted product designs, driving a 10% sustained lift in monthly sales while maintaining a 98% customer satisfaction benchmark."
+      responsibilities: [
+        "Launched 2 digital storefronts and engineered targeted product designs to optimize the e-commerce customer experience."
+      ],
+      achievements: [
+        "Generated over $100,000 USD in total revenue, driving a 10% sustained lift in monthly sales while maintaining a 98% customer satisfaction benchmark."
       ] }
   ],
 
@@ -165,8 +174,17 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const buildExp = a => `<div class="timeline">${a.map(e => {
     const extra = e.link ? ` ${link(e.link.text, e.link.url)}` : "";
-    const bullets = (e.bullets || []).map(b => `<li>${typeof b === "string" ? rich(b) : link(b.text, b.url)}</li>`).join("");
-    return `<div class="timeline-item"><h5><span class="text-muted">${esc(e.date)}</span>${rich(e.title)}${extra}</h5>${bullets ? `<ul>${bullets}</ul>` : ""}</div>`;
+    
+    const resps = (e.responsibilities || []).map(b => `<li>${typeof b === "string" ? rich(b) : link(b.text, b.url)}</li>`).join("");
+    const achs = (e.achievements || []).map(b => `<li>${typeof b === "string" ? rich(b) : link(b.text, b.url)}</li>`).join("");
+    
+    let html = `<div class="timeline-item"><h5><span class="text-muted">${esc(e.date)}</span>${rich(e.title)}${extra}</h5>`;
+    
+    if (resps) html += `<ul>${resps}</ul>`;
+    if (achs) html += `<br><strong>Key Achievements:</strong><ul>${achs}</ul>`;
+    
+    html += `</div>`;
+    return html;
   }).join("")}</div>`;
 
   const buildCert = a => `<div class="certificate-grid">${a.map(c =>
@@ -197,7 +215,7 @@ document.addEventListener("DOMContentLoaded", () => {
     [SITE.clubs,          buildList, "act-content",       "activities",     "act-title",       "nav-act",    "act"]
   ];
 
-  $("intro").textContent = SITE.intro;
+  $("intro").innerHTML = SITE.intro;
   S.forEach(([data, build, box, sec, title, nav, key]) => {
     const has = Array.isArray(data) && data.length > 0;
     $(box).innerHTML = has ? build(data) : "";
