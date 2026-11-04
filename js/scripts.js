@@ -56,7 +56,7 @@ const SITE = {
       ],
       achievements: [
         "Generated designs that contributed to over $100,000 USD in sales and achieved 98% positive feedback across US ecommerce platforms, demonstrating effective research and customer engagement strategies.",
-         "Launched and managed 2 new stores with different product lines in Q1.2021, contributing to a ~10% increase in monthly revenue since Q3 and Q4.2021."
+        "Launched and managed 2 new stores with different product lines in Q1.2021, contributing to a ~10% increase in monthly revenue since Q3 and Q4.2021."
       ] }
   ],
   skills: [
