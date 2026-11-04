@@ -37,8 +37,11 @@ const SITE = {
       title: "Business Analyst, Commercial & Supply Chain Operations, Dentsply Sirona",
       link: null,
       bullets: [
-        "Automated commercial workflows by deploying Salesforce CRM, cutting cross-functional processing times by 50% while increasing data accuracy.",
-        "Modeled SBU sales data and restructured distribution networks during a corporate reorganization, identifying expansion opportunities for a projected 20% revenue lift and cutting logistics cycle times by 30%."
+         "Served as Salesforce's Project Manager. Responsible for new function deployment, user testing, training, support, data QC/ QA, and CRM-CDP-ERP integration, implementation, resolve requests/ issues/ backlogs.
+         "Automated commercial workflows by deploying Salesforce CRM, cutting cross-functional processing times by 50% while increasing data accuracy.",
+         "Modeled SBU sales data and restructured distribution networks during a corporate reorganization, identifying expansion opportunities for a projected 20% revenue lift and cutting logistics cycle times by 30%."
+         "Systems deployed: ERP, CDP, DMP, CRM, QMS, TPRM, BI"
+
       ] },
     { date: "Mar 2017 – Feb 2025 · Ho Chi Minh City, Vietnam",
       title: "Business Owner / Strategic Advisor, DGT Collectibles Studio",
