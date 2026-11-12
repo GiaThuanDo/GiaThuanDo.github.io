@@ -66,8 +66,7 @@ const SITE = {
   skills: [
     "**Business Systems & Applications:** ERP, CRM, CDP, DMP, QMS, TPRM, SAP/AX, Salesforce",
     "**Data & Productivity Tools:** Power BI (DAX), Tableau, SQL, Python, Excel, Visio",
-    "**Languages:** Vietnamese (Native), English (C1), French (B1), Chinese (B1), Japanese (A2)",
-    "**Hobby & Interests:** 3D design, collecting antiques, learning languages"
+    "**Languages:** Vietnamese (Native), English (C1), French (B1), Chinese (B1), Japanese (A2)"
   ],
   certifications: [
     { name: "Salesforce Ranger Badge", url: "" },
@@ -103,8 +102,7 @@ const SITE = {
       ] }
   ],
   clubs: [
-    "**Hobby** — VSU × NTPU Collaborative Hackathon on AI Application (UI/UX Designer)",
- 
+    "**Hobby & Interests:** 3D design, collecting antiques, learning languages", 
   ],
   titles:    { edu: "Education", exp: "Experience", skills: "Skills", cert: "Certifications", award: "Awards", pub: "Publications", port: "Portfolio", act: "Activities" },
   navLabels: { edu: "Education", exp: "Experience", skills: "Skills", cert: "Certifications", award: "Awards", pub: "Publications", port: "Portfolio", act: "Activities" }
