@@ -65,7 +65,7 @@ const SITE = {
   ],
   skills: [
     "**Business Systems & Applications:** ERP, CRM, CDP, DMP, QMS, TPRM, SAP/AX, Salesforce",
-    "**Data & Productivity Tools:** BI, Power BI (DAX), Tableau, SQL, Python, VBA, Excel, Power Automate, Visio",
+    "**Data & Productivity Tools:** Power BI (DAX), Tableau, SQL, Python, Excel, Visio",
     "**Languages:** Vietnamese (Native), English (C1), French (B1), Chinese (B1), Japanese (A2)",
     "**Hobby & Interests:** 3D design, collecting antiques, learning languages"
   ],
