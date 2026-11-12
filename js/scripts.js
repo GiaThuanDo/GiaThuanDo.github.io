@@ -75,12 +75,15 @@ const SITE = {
     { name: "More certifications (Google Drive)", url: "https://drive.google.com/drive/folders/1Xw6RfNgJpnIHjmEiR2bQ6iLv28meuZkd?usp=sharing" }
   ],
   awards: [
-    "**Sole annual admit**, NEOMA Business School global Dual Degree program (1 candidate per year)",
-    "**Class Valedictorian**, Ton Duc Thang University (2022); 4 scholarships for Academic Excellence; Dean's List; Honors Student",
-    "**Partial Scholarship, ANNEX Scholarship and Research Assistant Scholarship**, National Taipei University"
+    "**1st Place** — VSU × NTPU Collaborative Hackathon on AI Application (UI/UX Designer)",
+    "**1st Place** — Future Bankers @ Cathay Talent Lab Competition (Team Lead)",
+    "**Finalist** — Ministry of Digital Affairs, Digital Talent Enhancement on AI Marketing (Team Lead)",
+    "**Finalist** — Management Trainee / Associate Programs: L'Oréal, Prudential, Generali and others",
+    "**Outstanding Individual Award** — National English Olympiad (Team Lead)",
+    "**Champion** — Troy University English Contest"
   ],
   publications: [
-    "**Your Name**, Co-author Name (Year), \"Paper Title\", Conference or Journal Name, City, Country, Month Day, Year. [Replace or delete this line]"
+    "**Name**, Co-author Name (Year), \"Paper Title\", Conference or Journal Name, City, Country, Month Day, Year. [Replace or delete this line]"
   ],
   portfolio: [
     { heading: "Competitions",
@@ -100,12 +103,8 @@ const SITE = {
       ] }
   ],
   clubs: [
-    "**1st Place** — VSU × NTPU Collaborative Hackathon on AI Application (UI/UX Designer)",
-    "**1st Place** — Future Bankers @ Cathay Talent Lab Competition (Team Lead)",
-    "**Finalist** — Ministry of Digital Affairs, Digital Talent Enhancement on AI Marketing (Team Lead)",
-    "**Finalist** — Management Trainee / Associate Programs: L'Oréal, Prudential, Generali and others",
-    "**Outstanding Individual Award** — National English Olympiad (Team Lead)",
-    "**Champion** — Troy University English Contest"
+    "**Hobby** — VSU × NTPU Collaborative Hackathon on AI Application (UI/UX Designer)",
+ 
   ],
   titles:    { edu: "Education", exp: "Experience", skills: "Skills", cert: "Certifications", award: "Awards", pub: "Publications", port: "Portfolio", act: "Activities" },
   navLabels: { edu: "Education", exp: "Experience", skills: "Skills", cert: "Certifications", award: "Awards", pub: "Publications", port: "Portfolio", act: "Activities" }
