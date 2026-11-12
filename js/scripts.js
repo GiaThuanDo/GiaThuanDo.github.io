@@ -78,7 +78,7 @@ const SITE = {
     "**1st Place** — VSU × NTPU Collaborative Hackathon on AI Application (UI/UX Designer)",
     "**1st Place** — Future Bankers @ Cathay Talent Lab Competition (Team Lead)",
     "**Finalist** — Ministry of Digital Affairs, Digital Talent Enhancement on AI Marketing (Team Lead)",
-    "**Finalist** — Management Trainee / Associate Programs: L'Oréal, Prudential, Generali and others",
+    "**Finalist** — Management Trainee / Associate Programs (L'Oréal, Prudential, Generali, ...)",
     "**Outstanding Individual Award** — National English Olympiad (Team Lead)",
     "**Champion** — Troy University English Contest"
   ],
