@@ -69,7 +69,7 @@ const SITE = {
     "**Languages:** Vietnamese (Native), English (C1), French (B1), Chinese (B1), Japanese (A2)"
   ],
   certifications: [
-    { name: "Salesforce Ranger Badge", url: "" },
+    { name: "Salesforce Ranger Badge", url: "https://www.salesforce.com/trailblazer/profile" },
     { name: "Certified Translator Certificate", url: "" },
     { name: "More certifications (Google Drive)", url: "https://drive.google.com/drive/folders/1Xw6RfNgJpnIHjmEiR2bQ6iLv28meuZkd?usp=sharing" }
   ],
