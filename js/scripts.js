@@ -100,7 +100,7 @@ const SITE = {
     { heading: "Work & Research Projects",
       items: [
         { event: "IFIT Lab · 2025 – Present", title: "Multilingual AI Model Benchmarking", note: "STT/TTS, translation, conversational AI and RAG", award: "", links: [] },
-        { event: "Python Project", title: "World Energy Transition Analysis", note: "Data Analysis Project using Python", links: ["https://www.kaggle.com/code/giathuan/world-energy-transition-analysis"] },
+        { event: "Python Project", title: "World Energy Transition Analysis", note: "Data Analysis Project using Python", url: "https://www.kaggle.com/code/giathuan/world-energy-transition-analysis" },
         { event: "Dentsply Sirona · 2022 – 2025", title: "Salesforce CRM Workflow Automation", note: "Cut cross-functional processing time by 50%", award: "", links: [] }
       ] },
     { heading: "Course Projects",
