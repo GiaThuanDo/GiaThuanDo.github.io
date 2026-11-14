@@ -113,7 +113,7 @@ const SITE = {
   ],
   titles:    { edu: "Education", exp: "Experience", skills: "Skills", cert: "Certifications", award: "Awards", pub: "Publications", port: "Portfolio", act: "Activities" },
   navLabels: { edu: "Education", exp: "Experience", skills: "Skills", cert: "Certifications", award: "Awards", pub: "Publications", port: "Portfolio", act: "Activities" }
-};
+;
 
 /* ============================ RENDER CODE ============================ */
 document.addEventListener("DOMContentLoaded", () => {
