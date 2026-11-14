@@ -80,6 +80,8 @@ const SITE = {
   awards: [
     "**1st Place** — VSU × NTPU Collaborative Hackathon on AI Application (UI/UX Designer)",
     "**1st Place** — Future Bankers @ Cathay Talent Lab Competition (Team Lead)",
+title: "**1st Place** — Future Bankers @ Cathay Talent Lab Competition (Team Lead)",
+    url: "https://www.linkedin.com/posts/giathuando_im-truly-grateful-to-cathay-united-bank-ugcPost-7402390320224915456-jCaL/?utm_source=share&utm_medium=member_desktop&rcm=ACoAACxoHwIBJBgzhmIED6QX9MOMwVoR8OHWlWo",
     "**Finalist** — Ministry of Digital Affairs, Digital Talent Enhancement on AI Marketing (Team Lead)",
     "**Finalist** — Management Trainee / Associate Programs (L'Oréal, Prudential, Generali,...)",
     "**Outstanding Individual Award** — National English Olympiad (Team Lead)",
