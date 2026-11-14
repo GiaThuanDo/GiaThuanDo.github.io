@@ -100,7 +100,7 @@ const SITE = {
     { heading: "Work & Research Projects",
       items: [
         { event: "IFIT Lab · 2025 – Present", title: "Multilingual AI Model Benchmarking", note: "STT/TTS, translation, conversational AI and RAG", award: "", links: [] },
-        { event: "Python Project", title: "World Energy Transition Analysis", note: "Data Analysis Project using Python", links: [ { label: "Project Site", url: "https://www.kaggle.com/code/giathuan/world-energy-transition-analysis" },
+        { event: "Python Project", title: "World Energy Transition Analysis", note: "Data Analysis Project using Python", links: [{ label: "Project Site", url: "https://www.kaggle.com/code/giathuan/world-energy-transition-analysis" }] },
         { event: "Dentsply Sirona · 2022 – 2025", title: "Salesforce CRM Workflow Automation", note: "Cut cross-functional processing time by 50%", award: "", links: [] }
       ] },
     { heading: "Course Projects",
@@ -111,7 +111,7 @@ const SITE = {
   clubs: [
     "**Hobby & Interests:** 3D design, collecting antiques, learning languages", 
   ],
-  titles:    { edu: "Education", exp: "Experience", skills: "Skills", cert: "Certifications", award: "Awards", pub: "Publications", port: "Portfolio", act: "Activities" },
+  titles: { edu: "Education", exp: "Experience", skills: "Skills", cert: "Certifications", award: "Awards", pub: "Publications", port: "Portfolio", act: "Activities" },
   navLabels: { edu: "Education", exp: "Experience", skills: "Skills", cert: "Certifications", award: "Awards", pub: "Publications", port: "Portfolio", act: "Activities" }
 };
 /* ============================ RENDER CODE ============================ */
