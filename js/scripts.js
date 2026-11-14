@@ -56,7 +56,7 @@ const SITE = {
       link: null,
       responsibilities: [
         "Managed daily operations across 6 e-commerce stores, coordinating with designers, manufacturers, and shipping partners to oversee product design, order fulfillment, and delivery across major US marketplaces, including eBay, Amazon, Etsy, Walmart, HomeDepot,....",
-        "Product range: Print-on-demand garments, posters, mugs, electronics, sport equipments, jewellery,....",
+        "Product range: Print-on-demand garments, posters, mugs, electronics, sport equipments, jewelleries,....",
       ],
       achievements: [
         "Generated designs that contributed to over $100,000 USD in sales and achieved 98% positive feedback across US ecommerce platforms, demonstrating effective research and customer engagement strategies.",
@@ -70,14 +70,18 @@ const SITE = {
   ],
   certifications: [
     { name: "Salesforce Ranger Badge", url: "https://www.salesforce.com/trailblazer/profile" },
+    { name: "FMI Foundations in Financial Modeling", url: "https://credential.fminstitute.com/0335a75c-a590-4d47-8cf1-ca01e57d40a5#acc.uSCMdVDg" },
+    { name: "Building RAG Agents with LLMs", url: "https://drive.google.com/file/d/1bBgJrHM7TTzzr4fsof64_HqfVJYH3hy6/view?usp=sharing" },
+    { name: "Bloomberg ESG", url: "https://portal.bloombergforeducation.com/certificates/21BBWgNo7j9nhU6jTZcGXGSQ" },
+    { name: "Bloomberg Finance Fundamentals", url: "https://portal.bloombergforeducation.com/certificates/Ptb5UarabiYy7KMGShzBc453" },
     { name: "Certified Translator Certificate", url: "" },
-    { name: "More certifications (Google Drive)", url: "https://drive.google.com/drive/folders/1Xw6RfNgJpnIHjmEiR2bQ6iLv28meuZkd?usp=sharing" }
+    { name: "More certifications (80+)", url: "https://drive.google.com/drive/folders/1Xw6RfNgJpnIHjmEiR2bQ6iLv28meuZkd?usp=sharing" }
   ],
   awards: [
     "**1st Place** — VSU × NTPU Collaborative Hackathon on AI Application (UI/UX Designer)",
     "**1st Place** — Future Bankers @ Cathay Talent Lab Competition (Team Lead)",
     "**Finalist** — Ministry of Digital Affairs, Digital Talent Enhancement on AI Marketing (Team Lead)",
-    "**Finalist** — Management Trainee / Associate Programs (L'Oréal, Prudential, Generali, ...)",
+    "**Finalist** — Management Trainee / Associate Programs (L'Oréal, Prudential, Generali,...)",
     "**Outstanding Individual Award** — National English Olympiad (Team Lead)",
     "**Champion** — Troy University English Contest"
   ],
