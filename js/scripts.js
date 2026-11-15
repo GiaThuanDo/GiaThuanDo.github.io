@@ -20,7 +20,7 @@ const SITE = {
   experience: [
     { date: "Apr 2025 – Present · Taipei, Taiwan",
       title: "AI Research Assistant (Part-Time), IFIT Lab",
-      link: null,
+      link: "https://www.aifitesg.org/",
       responsibilities: [
          "Built RAG, AI Chatbots, experimented building simple Agentic AI, Multi-Agents.",
          "Conducted comparative benchmarking research of AI models across multilingual STT/TTS, translation, conversational AI, identifying model strengths, performance limitations and potential applications in workflow automation."
