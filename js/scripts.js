@@ -89,19 +89,16 @@ const SITE = {
     "**Name**, Co-author Name (Year), \"Paper Title\", Conference or Journal Name, City, Country, Month Day, Year. [Replace or delete this line]"
   ],
   portfolio: [
-    { heading: "Competitions",
+    { heading: "Professional Projects",
       items: [
-        { event: "VSU × NTPU Collaborative Hackathon", title: "[Project name]", note: "Role: UI/UX Designer", award: "1st Place", links: [] },
-        { event: "Future Bankers @ Cathay Talent Lab", title: "[Project name]", note: "Role: Team Lead", award: "1st Place", links: [] },
-        { event: "Future Bankers @ Cathay Talent Lab", title: "[Project name]", note: "Role: Team Lead", award: "1st Place", links: [] },
-        { event: "Future Bankers @ Cathay Talent Lab", title: "[Project name]", note: "Role: Team Lead", award: "1st Place", links: [] },
-        { event: "Ministry of Digital Affairs, AI Marketing", title: "[Project name]", note: "Role: Team Lead", award: "Finalist", links: [] }
-      ] },
-    { heading: "Work & Research Projects",
-      items: [
-        { event: "IFIT Lab · 2025 – Present", title: "Multilingual AI Model Benchmarking", note: "STT/TTS, translation, conversational AI and RAG", award: "", links: [] },
+        { event: "Power BI Project", title: "Financial Analysis Dashboard", note: "Using Power BI to visualize data", links: [{ label: "Project Site", url: "https://giathuando.github.io/financial-analysis-dashboard/#overview" }] },
         { event: "Python Project", title: "World Energy Transition Analysis", note: "Data Analysis Project using Python", links: [{ label: "Project Site", url: "https://www.kaggle.com/code/giathuan/world-energy-transition-analysis" }] },
-        { event: "Dentsply Sirona · 2022 – 2025", title: "Salesforce CRM Workflow Automation", note: "Cut cross-functional processing time by 50%", award: "", links: [] }
+        { event: "", title: "", note: "", award: "", links: [] }
+      ] },
+    { heading: "Personal Projects",
+      items: [
+        { event: "Python Project", title: "World Energy Transition Analysis", note: "Data Analysis Project using Python", links: [{ label: "Project Site", url: "https://www.kaggle.com/code/giathuan/world-energy-transition-analysis" }] },
+        { event: "", title: "", note: "", award: "", links: [] }
       ] },
     { heading: "Course Projects",
       items: [
