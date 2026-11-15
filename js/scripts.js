@@ -94,6 +94,7 @@ const SITE = {
       items: [
         { event: "Power BI Project", title: "Financial Analysis Dashboard", note: "Using Power BI to visualize data", links: [{ label: "Project Site", url: "https://giathuando.github.io/financial-analysis-dashboard/#overview" }] },
         { event: "Python Project", title: "World Energy Transition Analysis", note: "Data Analysis Project using Python", links: [{ label: "Project Site", url: "https://www.kaggle.com/code/giathuan/world-energy-transition-analysis" }] },
+        { event: "Multi-Agents Project", title: "Slip Guard: a RevOps copilot with human approval", note: "Building simple MultiAgent", links: [{ label: "Project Site", url: "https://www.kaggle.com/code/giathuan/multiagent-project" }] },
         { event: "", title: "", note: "", award: "", links: [] }
       ] },
     { heading: "Course Projects",
