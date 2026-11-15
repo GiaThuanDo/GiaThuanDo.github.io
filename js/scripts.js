@@ -22,7 +22,8 @@ const SITE = {
       title: "AI Research Assistant (Part-Time), IFIT Lab",
       link: null,
       responsibilities: [
-         "Built RAG, AI Chatbots, conducted comparative benchmarking research of AI models across multilingual STT/TTS, translation, conversational AI and RAG, identifying model strengths, performance limitations and potential applications in workflow automation and Agentic AI."
+         "Built RAG, AI Chatbots, experimented building simple Agentic AI, Multi-Agents.",
+         "Conducted comparative benchmarking research of AI models across multilingual STT/TTS, translation, conversational AI, identifying model strengths, performance limitations and potential applications in workflow automation."
       ],
       achievements: [
          "Inclusive AI Dialogue Assistive Device Project, sub-project 3: Multimodal Cross-lingual Task-Oriented Dialogue System for Inclusive Communication Support (NSTC)"
