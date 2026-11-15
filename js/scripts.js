@@ -96,11 +96,6 @@ const SITE = {
         { event: "Python Project", title: "World Energy Transition Analysis", note: "Data Analysis Project using Python", links: [{ label: "Project Site", url: "https://www.kaggle.com/code/giathuan/world-energy-transition-analysis" }] },
         { event: "", title: "", note: "", award: "", links: [] }
       ] },
-    { heading: "Personal Projects",
-      items: [
-        { event: "Python Project", title: "World Energy Transition Analysis", note: "Data Analysis Project using Python", links: [{ label: "Project Site", url: "https://www.kaggle.com/code/giathuan/world-energy-transition-analysis" }] },
-        { event: "", title: "", note: "", award: "", links: [] }
-      ] },
     { heading: "Course Projects",
       items: [
         { event: "2025 Software Engineering", title: "InquAIry", note: "", award: "", links: [ { label: "Project Site", url: "https://inquairy.github.io/" }, { label: "Course Report", url: "https://drive.google.com/file/d/1bs-NMOpDBO3KZ7iBUrAFOAE6JCavFvb5/view?usp=drive_link" } ] }
