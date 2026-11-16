@@ -90,7 +90,7 @@ const SITE = {
     "**Name**, Co-author Name (Year), \"Paper Title\", Conference or Journal Name, City, Country, Month Day, Year. [Replace or delete this line]"
   ],
   portfolio: [
-    { heading: "Professional Projects",
+    { heading: "Personal Projects",
       items: [
         { event: "Power BI Project", title: "Financial Analysis Dashboard", note: "Using Power BI to visualize data", links: [{ label: "Project Site", url: "https://giathuando.github.io/financial-analysis-dashboard/#overview" }] },
         { event: "Python Project", title: "World Energy Transition Analysis", note: "Data Analysis Project using Python", links: [{ label: "Project Site", url: "https://www.kaggle.com/code/giathuan/world-energy-transition-analysis" }] },
